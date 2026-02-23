@@ -48,54 +48,73 @@
 
                 <div class="box-input">
                     <label for="model">kilometragem do veiculo <span class="require-fild">*</span></label>
-                    <input type="number" name="mileage" id="mileage" class="block" placeholder="digite a kilometragem do veiculo"
-                        required></div>
+                    <input type="number" name="mileage" id="mileage" class="block"
+                        placeholder="digite a kilometragem do veiculo" required>
+                </div>
 
-                 <div class="box-input">
+                <div class="box-input">
                     <label for="model">data da compra do veiculo<span class="require-fild">*</span></label>
-                    <input type="date" name="mileage" id="mileage" class="block" placeholder="digite a data de compra do veiculo"
-                        required></div>
-
-                 <div class="box-input">
-                    <p>tipo de cambio <span class="require-fild">*</span></p>
+                    <input type="date" name="mileage" id="mileage" class="block"
+                        placeholder="digite a data de compra do veiculo" required>
+                </div>
+             <div class="box-input"> <p>tipo de cambio <span class="require-fild">*</span></p>
                     <input type="radio" name="manual" id="gear">
                     <label for="manual">manual</label>
                     <input type="radio" name="manual" id="automatico">
-                    <label for="auto">automatico</label>
+                    <label for="auto">automatico</label></div>
+                <div class="box-input">
+                   
                     <div class="optical-box">
-                        <ul class="opitical-list">opicionais
+                        <ul class="opitical-list">
+                            <p>opicionais</p>
                             <li>
-                                <input type="checkbox"  id="airbag" name="optical[]" value="airbag">
+                                <input type="checkbox" id="airbag" name="optical[]" value="airbag">
                                 <label for="airbag">airbag</label>
                             </li>
-                             <li>
-                                <input type="checkbox"  id="alarme" name="optical[]" value="airbag">
+                            <li>
+                                <input type="checkbox" id="alarme" name="optical[]" value="alarme">
                                 <label for="alarme">alarme</label>
                             </li>
-                             <li>
-                                <input type="checkbox"  id="ac" name="optical[]" value="airbag">
+                            <li>
+                                <input type="checkbox" id="ac" name="optical[]" value="ac">
                                 <label for="ac">ar condicionado</label>
                             </li>
-                             <li>
-                                <input type="checkbox"  id="abs" name="optical[]" value="airbag">
+                            <li>
+                                <input type="checkbox" id="abs" name="optical[]" value="abs">
                                 <label for="abs">abs</label>
                             </li>
-                             <li>
-                                <input type="checkbox"  id="cam" name="optical[]" value="airbag">
+                            <li>
+                                <input type="checkbox" id="cam" name="optical[]" value="cam">
                                 <label for="cam">camera de re</label>
                             </li>
-
-
+                            <li>
+                                <input type="checkbox" id="ais" name="optical[]" value="ais">
+                                <label for="ais">assitente de pista</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="key" name="optical[]" value="key">
+                                <label for="key">chave keyless</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="conc" name="optical[]" value="conc">
+                                <label for="conc">andoid auto/car play </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="couro" name="optical[]" value="couro">
+                                <label for="couro">banco de couro</label>
+                            </li>
                         </ul>
-
                     </div>
-                    
+                   <div class="box-input">
+                    <p>fotos do carro : <span class="require-fild">*</span></p>
+                    <input type="file" multiple accept="img/jpg,image/pmg" id="image" name="image" required>
+                   </div>
 
 
                 </div>
 
 
-                <input type="submit" value="enviar"> <input type="reset" type="reset" value="reset">
+                <input type="submit" value="enviar" class="btn-submit"> <input type="reset" type="reset" value="reset" class="btn-res">
         </div>
 
 
