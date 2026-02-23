@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>venda de carro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3> cadastre seu veiculo para vender mais rapido</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>formulario</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title"> venda facil seu carro</h1>
+                <p> digite as caracteristicas e os opicionais do seu carro</p>
+            </div>
+            <form>
+                <div class="box-input">
+                    <label for="title">titulo do anúcio <span class="require-fild">*</span></label>
+                    <input type="text" name="title" id="title" class="block" placeholder="titulo para a venda"
+                        minlength="1" maxlength="30" required>
+                </div>
+
+                <div class="box-input">
+                    <label for="price">preço <span class="require-fild">*</span></label>
+                    <input type="number" name="price" id="price" class="block" placeholder="titulo para a venda"
+                        minlength="1" maxlength="30" required>
+                </div>
+
+                <div class="box-input">
+                    <label for="description">descricao <span class="require-fild">*</span></label>
+                    <textarea name="description" id="description" class="block"
+                        placeholder="coloque os detalhes do veiculo"></textarea>
+                </div>
+
+                <div class="box-input">
+                    <label for="brand">marca do veiculo <span class="require-fild">*</span></label>
+                    <input type="text" name="brand" id="brand" class="block" placeholder="qual a marca do veiculo"
+                        required>
+                </div>
+
+                <div class="box-input">
+                    <label for="model">kilometragem do veiculo <span class="require-fild">*</span></label>
+                    <input type="number" name="mileage" id="mileage" class="block" placeholder="digite a kilometragem do veiculo"
+                        required></div>
+
+                 <div class="box-input">
+                    <label for="model">data da compra do veiculo<span class="require-fild">*</span></label>
+                    <input type="date" name="mileage" id="mileage" class="block" placeholder="digite a data de compra do veiculo"
+                        required></div>
+
+                 <div class="box-input">
+                    <p>tipo de cambio <span class="require-fild">*</span></p>
+                    <input type="radio" name="manual" id="gear">
+                    <label for="manual">manual</label>
+                    <input type="radio" name="manual" id="automatico">
+                    <label for="auto">automatico</label>
+                    <div class="optical-box">
+                        <div class=""></div>
+
+                    </div>
+                    
+
+
+                </div>
+
+
+                <input type="submit" value="enviar"> <input type="reset" type="reset" value="reset">
+        </div>
+
+
+    </div>
+
+
+
+
+
+    </form>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
