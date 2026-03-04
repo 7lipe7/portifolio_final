@@ -142,7 +142,6 @@ body {
 
 .habilidades-item{
   margin-top: 50px;
-  background: #020617b4;
   padding: 25px;
   border-radius: 15px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -296,3 +295,5 @@ img{
   height: auto;
   object-fit: cover;
 }
+
+
