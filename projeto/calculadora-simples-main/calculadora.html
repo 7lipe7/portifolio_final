@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div class="fundo">
+        <h1>calculadora digital</h1>
+        <div class="calculadora">
+            <input type="text" disabled id="display">
+            <div class="box-button">
+                <button onclick=" clean()" id="limp">c</button>
+                <button onclick=" apagarUm()" >&lt;</button>
+                <button onclick=" insertDados('/')">/</button>
+                <button onclick=" insertDados('*')">*</button>
+                <button onclick=" insertDados('7')">7</button>
+                <button onclick=" insertDados('8')">8</button>
+                <button onclick=" insertDados('9')">9</button>
+                <button onclick=" insertDados('-')">-</button>
+                <button onclick=" insertDados('4')">4</button>
+                <button onclick=" insertDados('5')">5</button>
+                <button onclick=" insertDados('6')">6</button>
+                <button onclick=" insertDados('+')">+</button>
+                <button onclick=" insertDados('1')">1</button>
+                <button onclick=" insertDados('2')">2</button>
+                <button onclick=" insertDados('3')">3</button>
+                <button onclick=" insertDados('0') " id="btn-0">0</button>
+                <button onclick=" insertDados('.')">.</button>
+                <button onclick=" result()" id="btn-res">=</button>
+         
+            </div>
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
