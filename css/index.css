@@ -296,4 +296,7 @@ img{
   object-fit: cover;
 }
 
-
+#react{
+width: 300px;
+object-fit: cover;
+}
