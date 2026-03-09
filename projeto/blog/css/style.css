@@ -1,11 +1,16 @@
 *{
 margin: 0;
 padding: 0;
+box-sizing: border-box;
 }
+
 body{
 background-color: #f5f7fb;
 font-family: Arial, Helvetica, sans-serif;
 }
+
+/* NAVBAR */
+
 .nav-container{
 color: #fff;
 display: flex;
@@ -14,9 +19,14 @@ position: fixed;
 top: 0;
 width: 100%;
 background-color:#20272e;
-padding: 5px ;
-text-decoration: none;
-} 
+padding: 10px;
+}
+
+.nav-item{
+display: flex;
+gap: 50px;
+}
+
 a{
 text-decoration: none;
 color: #fff;
@@ -30,46 +40,57 @@ background-color: #5886B9;
 transition: 0.3s;
 }
 
+/* MAIN */
 
-.nav-item{
-display: flex;
-gap: 50px ;
-
-}
 main{
-margin-top: 80px;
+margin-top: 90px;
 }
+
 #posts{
 width: 80%;
+max-width: 900px;
 margin: 0 auto;
 background-color: rgb(250, 247, 243);
-border-radius: 10px ;
-
-
+border-radius: 10px;
+padding: 20px;
 }
+
 h1{
 text-align: center;
-
 }
+
 p{
 padding: 20px;
-max-width: 80%;
+max-width: 100%;
+}
+
+/* POSTS */
+
+#programacao,
+#jornada,
+#erros{
+display: flex;
+width: 100%;
+gap: 20px;
 padding: 20px;
+margin-top: 20px;
+border-radius: 10px;
+flex-wrap: wrap;
 }
-#programacao,#jornada , #erros{
-    display: flex;
-    width: 612px;
-    padding: 25px ;
-    margin-top: 20px;
-    border-radius: 10px;
-}
+
+/* IMAGEM */
+
 img{
-       padding: 25px ;
-    margin-top: 20px;
-    border-radius: 10px
+width: 100%;
+max-width: 500px;
+height: auto;
+border-radius: 10px;
 }
+
+/* TITULOS */
+
 h2{
-padding: 30px 30px 30px;
+padding: 20px;
 }
 
 h3{
@@ -77,22 +98,63 @@ padding: 20px;
 font-size: 25px;
 }
 
-ul {
-  list-style: none;
-}
-li{
-padding: 20px;
+/* LISTAS */
+
+ul{
 list-style: none;
 }
+
+li{
+padding: 10px;
+}
+
+/* ARTICLE */
+
 article{
 margin-bottom: 40px;
 }
+
+/* FOOTER */
+
 footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    background-color: rgb(34, 34, 34);
-    width: 100%;
-   
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: #fff;
+background-color: rgb(34, 34, 34);
+width: 100%;
+padding: 20px;
+flex-wrap: wrap;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px){
+
+.nav-item{
+flex-direction: column;
+gap: 5px;
+align-items: center;
+}
+
+main{
+margin-top: 140px;
+}
+
+#posts{
+width: 95%;
+}
+
+#programacao,
+#jornada,
+#erros{
+flex-direction: column;
+}
+
+footer{
+flex-direction: column;
+text-align: center;
+gap: 10px;
+}
+
 }
