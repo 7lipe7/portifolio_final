@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Lucro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #218838;
+    }
+
+    .resultado {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Calculadora de Lucro</h2>
+
+  <label>Custo do Produto (R$)</label>
+  <input type="number" id="custo" placeholder="Ex: 50">
+
+  <label>Preço de Venda (R$)</label>
+  <input type="number" id="venda" placeholder="Ex: 80">
+
+  <button onclick="calcularLucro()">Calcular</button>
+
+  <div class="resultado" id="resultado"></div>
+</div>
+
+<script>
+function calcularLucro() {
+  let custo = parseFloat(document.getElementById('custo').value);
+  let venda = parseFloat(document.getElementById('venda').value);
+
+  if (isNaN(custo) || isNaN(venda)) {
+    document.getElementById('resultado').innerHTML = "Preencha todos os campos!";
+    return;
+  }
+
+  let lucro = venda - custo;
+  let margem = (lucro / venda) * 100;
+
+  document.getElementById('resultado').innerHTML = `
+    Lucro: R$ ${lucro.toFixed(2)} <br>
+    Margem: ${margem.toFixed(2)}%
+  `;
+}
+</script>
+
+</body>
+</html>

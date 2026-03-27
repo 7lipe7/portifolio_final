@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/script.js" defer></script>
+    <title>nutri</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="img/calcular.png" alt="">
+            <h1 class="title">macroMind</h1>
+        </nav>
+        <main>
+            <div class="obejetivo">
+                <div class="card">
+                    <h2>digite aqui suas informaçoes</h2>
+                    <div class="form">
+                        <form id="calculo">
+                            <label class="data">informe a sua idade</label>
+                            <input type="number" name="data" id="idade" placeholder="sua idade " required>
+                            <div class="sexo">
+
+                                <label>Sexo</label>
+
+                                <div class="opcoes">
+                                    <label for="m">
+                                        <input type="radio" name="sexo" id="m" value="masculino" required>
+                                        Masculino
+                                    </label>
+
+                                    <label for="f">
+                                        <input type="radio" name="sexo" id="f" value="feminino">
+                                        Feminino
+
+                                    </label>
+                                </div>
+                            </div>
+                            <input type="number" name="altura" id="altura" placeholder="altura : ex 170" required>
+
+
+                            <input type="number" name="peso" id="peso" placeholder="seu peso(kg)" required>
+
+                            <Label> nivel de atividade</Label>
+                            <select id="atividade">
+                                <option value="1.2">
+                                    <p>sedentario</p>
+                                </option>
+                                <option value="1.375"> atividade leve</option>
+                                <option value="1.55"> atividade moderado</option>
+                                <option value="1.725">atleta</option>
+                                <option value="1.9">predeiro</option>
+                            </select>
+
+                            <button type="submit">calcular</button>
+
+                        </form>
+                    </div>
+                </div>
+        </main>
+        <div class="resultado-container">
+
+            <div class="metabolismo">
+                <h3>Sua taxa basal</h3>
+                <div class="basal_container">
+                    <p class="tBasal"></p>
+                </div>
+
+                <h3>Gasto Energético</h3>
+                <div class="gasto_energetico">
+                    <p class="gEnergetico"></p>
+                </div>
+            </div>
+
+            <div class="resultados">
+
+                <div class="container_resultado">
+                    <h4>Perder peso</h4>
+                    <p class="resultado"></p>
+                    <p>Kcal</p>
+                </div>
+
+                <div class="container_resultado1">
+                    <h4>Manter peso</h4>
+                    <p class="resultado1"></p>
+                    <p>Kcal</p>
+                </div>
+
+                <div class="container_resultado2">
+                    <h4>Ganhar peso</h4>
+                    <p class="resultado2"></p>
+                    <p>Kcal</p>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <footer>
+        <div class="footer">
+            <p id="ano"></p>
+            <p> &copy;felipe santana </p>
+        </div>
+    </footer>
+</body>
+
+</html>
